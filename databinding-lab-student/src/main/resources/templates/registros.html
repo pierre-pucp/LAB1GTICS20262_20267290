@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registracion</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<h1>Registro de Equipo Tecnologico</h1>
+
+<div class="card">
+    <form method="post" action="/registros">
+        <label>Nombre del Equipo</label><input name="nombre" value="">
+        <label>Type de Equipo</label><input name="tipo" value="">
+        <label>Codigo de activo</label><input name="codigo" value="">
+        <label>Fecha de Adquisicion</label><input name="fecha" value="">
+        <button type="submit">Registrar Equipo</button>
+    </form>
+    <a href="/equipos">Ver listado de equipos</a>
+</div>
+
+</body>
+</html>
